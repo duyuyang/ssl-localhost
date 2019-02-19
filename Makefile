@@ -5,6 +5,9 @@ help:
 	@printf "%s\n" "make tag TAG=0.1   Tag"
 	@printf "%s\n" "make run:          Run"
 
+dir:
+	mkdir cert csr private
+
 ca: # Create root CA
 	openssl req -new -x509 -extensions v3_ca -keyout private/cakey.pem -out cert/cacert.pem -days 365 -config openssl.cnf
 
