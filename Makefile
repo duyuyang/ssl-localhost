@@ -5,6 +5,8 @@ help:
 	@printf "%s\n" "make tag TAG=0.1   Tag"
 	@printf "%s\n" "make run:          Run"
 
+all: dir ca server sign build
+
 dir:
 	mkdir cert csr private
 
