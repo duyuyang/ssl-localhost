@@ -63,7 +63,7 @@ organizationalUnitName_default = GooVoo
 
 commonName = Common Name (eg, YOUR name)
 commonName_max = 64
-commonName_default = localhost 
+commonName_default = foo.dev 
 
 emailAddress = Email Address
 emailAddress_max = 64
@@ -100,7 +100,7 @@ organizationalUnitName_default = GooVoo
 
 commonName = Common Name (eg, YOUR name)
 commonName_max = 64
-commonName_default = localhost
+commonName_default = foo.dev
 
 emailAddress = Email Address
 emailAddress_max = 64
