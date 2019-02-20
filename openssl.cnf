@@ -63,7 +63,7 @@ organizationalUnitName_default = GooVoo
 
 commonName = Common Name (eg, YOUR name)
 commonName_max = 64
-commonName_default = foo.dev 
+commonName_default = foobar.com 
 
 emailAddress = Email Address
 emailAddress_max = 64
@@ -100,7 +100,7 @@ organizationalUnitName_default = GooVoo
 
 commonName = Common Name (eg, YOUR name)
 commonName_max = 64
-commonName_default = foo.dev
+commonName_default = foobar.com
 
 emailAddress = Email Address
 emailAddress_max = 64
@@ -126,7 +126,7 @@ subjectKeyIdentifier = hash
 subjectAltName=@alt_names
 
 [alt_names]
-DNS.1   = foo.dev
+DNS.1   = foobar.com
 IP.1    = 127.0.0.1
-DNS.2   = www.foo.dev
+DNS.2   = www.foobar.com
 IP.2    = 127.0.0.1
