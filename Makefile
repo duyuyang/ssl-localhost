@@ -26,4 +26,4 @@ tag:
 	docker tag $(image):latest $(image):$(TAG)
 
 run:
-	docker run -d -p 80:80 -p 443:443 $(image):latest
+	docker run -d --network=host -p 80:80 -p 443:443 $(image):latest
