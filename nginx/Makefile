@@ -6,6 +6,7 @@ help:
 	@printf "%s\n" "make run:          Run"
 
 all: dir ca server sign build
+run: clean nginx
 
 dir:
 	mkdir cert csr private
@@ -25,5 +26,8 @@ build:
 tag:
 	docker tag $(image):latest $(image):$(TAG)
 
-run:
-	docker run -d -p 80:80 -p 443:443 $(image):latest
+nginx:
+	docker run -d --name nginx-ssl -p 80:80 -p 443:443 $(image):latest
+
+clean:
+	docker rm -f nginx-ssl || echo 'all clear'
