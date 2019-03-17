@@ -11,7 +11,7 @@ dir:
 	mkdir cert csr private
 
 ca: # Create root CA
-	openssl req -new -x509 -extensions v3_ca -keyout private/cakey.pem -out cert/cacert.pem -days 365 -config openssl.cnf
+	../auto/createca.sh
 
 server: # Create a key (server-key.pem) and signing request (CSR - server-req.pem) for the server
 	openssl req -new -nodes -out csr/server-req.pem -keyout private/server-key.pem -days 365 -config openssl.cnf
