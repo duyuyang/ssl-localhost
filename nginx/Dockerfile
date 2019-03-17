@@ -7,3 +7,5 @@ COPY private/server-key.pem /etc/nginx/ssl/private.key
 COPY .htpasswd /etc/nginx/.htpasswd
 COPY default.conf /etc/nginx/conf.d/default.conf
 COPY nginx.conf /etc/nginx/nginx.conf
+
+ADD site/ /usr/share/nginx/html/
